@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel:wght@400;700&display=swap');
+
+body {
+  font-family: 'MedievalSharp', cursive;
+  background: 
+    linear-gradient(135deg, #3e2723 0%, #1b1210 100%),
+    repeating-linear-gradient(
+      45deg,
+      #4e342e 0px,
+      #4e342e 10px,
+      #5d4037 10px,
+      #5d4037 20px
+    );
+  color: #f0e6d3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+.login-container {
+  background: linear-gradient(135deg, #8b4513 0%, #5d4037 100%);
+  border: 15px solid #5d4037;
+  border-radius: 10px;
+  padding: 40px 30px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow:  0 0 30px rgba(0, 0, 0, 0.8),inset 0 0 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+h2 {
+  color: #ffd700;
+  text-align: center;
+  margin: 0 0 30px 0;
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  position: relative;
+  padding: 15px;
+  background: rgba(139, 69, 19, 0.7);
+  border: 2px solid #ffd700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 i {
+  margin-right: 15px;
+  color: #ffd700;
+  animation: swing 3s infinite ease-in-out;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: rgba(240, 230, 211, 0.9);
+  padding: 30px;
+  border: 3px solid #8b4513;
+  border-radius: 8px;
+  box-shadow: inset 0 0 15px rgba(139, 69, 19, 0.3), 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+form:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: 
+    linear-gradient(to bottom, #d1b894, #e2d0a8);
+  border-bottom: 2px solid #8b4513;
+  border-radius: 8px 8px 0 0;
+}
+
+form:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: 
+    linear-gradient(to top, #d1b894, #e2d0a8);
+  border-top: 2px solid #8b4513;
+  border-radius: 0 0 8px 8px;
+}
+
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #5d4037;
+  display: flex;
+  align-items: center;
+  font-family: 'Cinzel', serif;
+  position: relative;
+  padding-left: 45px;
+}
+
+label i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  color: #8b0000;
+  background: #d7ba7d;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #8b4513;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px 14px 14px 2px;
+  border: 3px solid #8b4513;
+  border-radius: 5px;
+  background: #f0e6d3;
+  color: #3a2f1d;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  font-family: 'MedievalSharp', cursive;
+  box-shadow: 
+    inset 0 0 8px rgba(139, 69, 19, 0.3),
+    0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #daa520;
+  box-shadow:  0 0 10px rgba(218, 165, 32, 0.5), inset 0 0 8px rgba(139, 69, 19, 0.3);
+  background: #fff8e1;
+}
+
+button[type="submit"] {
+  background: linear-gradient(to bottom, #5c4a3a, #3e2723);
+  color: #f0e6d3;
+  border: 3px solid #daa520;
+  border-radius: 8px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background: 
+    linear-gradient(to bottom, #daa520, #b8860b);
+  color: #3a2f1d;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  border-color: #8b4513;
+}
+
+button[type="submit"]:after {
+  content: "🔑";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+
+.links {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.links a {
+  color: #ffd700;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  font-family: 'Cinzel', serif;
+  position: relative;
+  padding: 8px 15px;
+  background: rgba(139, 69, 19, 0.5);
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.links a:hover {
+  color: white;
+  background: rgba(218, 165, 32, 0.7);
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.links a i {
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.links a:hover i {
+  transform: rotate(10deg);
+  color: white;
+}
+

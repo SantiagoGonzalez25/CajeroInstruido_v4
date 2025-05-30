@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>🏰 Tablero del Reino</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/styles/menu.css}">
+</head>
+<body>
+    <h2>Saludos, <span th:text="${cliente.nombre}">Cliente</span></h2>
+    
+    <div class="menu-grid">
+        <a th:href="@{/cajero/menu}" class="menu-item">
+            <i class="fas fa-university"></i> SALÓN REAL
+        </a>
+        <a th:href="@{/cajero/retiro}" class="menu-item">
+            <i class="fas fa-money-bill-wave"></i> RETIRAR ORO
+        </a>
+        <a th:href="@{/cajero/transferir}" class="menu-item">
+            <i class="fas fa-exchange-alt"></i> ENVIAR TESORO
+        </a>
+        <a th:href="@{/cajero/consignar}" class="menu-item">
+            <i class="fas fa-hand-holding-usd"></i> DEPOSITAR ORO
+        </a>
+        <a th:href="@{/cajero/cambiar-clave}" class="menu-item">
+            <i class="fas fa-key"></i> RENOVAR SELLO
+        </a>
+        <a th:href="@{/cajero/consultas}" class="menu-item">
+            <i class="fas fa-search-dollar"></i> CRÓNICAS
+        </a>
+    </div>
+    
+    <a th:href="@{/cajero/logout}" class="logout-btn">Cerrar sesión</a>
+</body>
+</html>

@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'MedievalSharp', cursive;
+    background: linear-gradient(135deg, #3e2723 0%, #1b1210 100%);
+    color: #f0e6d3;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.admin-container {
+    background: #f0e6d3;
+    border: 8px solid #8b4513;
+    border-radius: 6px;
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.admin-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 16px;
+    background: linear-gradient(to bottom, #d1b894, #e2d0a8);
+    border-bottom: 2px solid #8b4513;
+}
+
+.admin-container:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 16px;
+    background: linear-gradient(to top, #d1b894, #e2d0a8);
+    border-top: 2px solid #8b4513;
+}
+
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #8b0000;
+    text-align: center;
+    margin: 0 0 25px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    background: rgba(210, 180, 140, 0.7);
+    border-radius: 4px;
+    position: relative;
+    border-bottom: 2px solid #8b4513;
+}
+
+
+h2 i {
+    margin-right: 10px;
+    color: #8b0000;
+}
+
+
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+
+.form-group label {
+    font-family: 'Cinzel', serif;
+    color: #5d4037;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+}
+
+
+.form-group label i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+    color: #8b0000;
+    background: #d7ba7d;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #8b4513;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem 0.8rem 0.8rem 40px;
+    background: #f0e6d3;
+    border: 2px solid #8b4513;
+    border-radius: 4px;
+    color: #3a2f1d;
+    font-size: 1rem;
+    font-family: 'MedievalSharp', cursive;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #daa520;
+    background: #fff8e1;
+}
+
+
+.admin-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #5c4a3a;
+    color: #f0e6d3;
+    border: 2px solid #daa520;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 1.5rem;
+}
+
+.admin-btn:hover {
+    background: #8b4513;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.message {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background: #f0e6d3;
+    border: 2px solid #8b4513;
+    border-radius: 4px;
+}
+
+.message.success {
+    border-color: #2e7d32;
+    color: #2e7d32;
+}
+
+.message.error {
+    border-color: #c62828;
+    color: #c62828;
+    animation: shake 0.5s;
+}
+
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #5d4037;
+    background: rgba(210, 180, 140, 0.7);
+    border: 2px solid #8b4513;
+    border-radius: 4px;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+
+.back-btn i {
+    margin-right: 8px;
+}
+
+.back-btn:hover {
+    background: rgba(218, 165, 32, 0.7);
+    color: #8b0000;
+    transform: translateX(-4px);
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    75% { transform: translateX(6px); }
+}
